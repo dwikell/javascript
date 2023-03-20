@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Memasukkan Tinggi
+    const siswa1 = Number(prompt("Masukkan Tinggi badan siswa Pertama"));
+    const siswa2 = Number(prompt("Masukkan Tingi Badan Siswa Kedua"));
+    const siswa3 = Number(prompt("Masukkan Tinggi Badan Siswa Ketiga"));
+    //kondisi
+    if (siswa3>=siswa1 && siswa3>=siswa2) {
+        alert(`siswa ketiga lebih tinggi dari siapapun`)
+        if (siswa2>=siswa1) {
+            alert (`siswa kedua lebih tinggi dari siswa pertama`)
+            alert (`tinggi badan siswa pertama urutan siswa ketiga`)
+        }
+        else {
+            alert (`siswa pertama lebih tinggi dari siswa kedua`)
+            alert (`tinggi badan siswa kedua urutan ketiga`)
+        } 
+    } else if (siswa2>=siswa1 && siswa2>=siswa3){
+        alert (`siswa kedua lebih tinggi dari siapapun`) 
+        if(siswa3>=siswa1) {
+            alert (`siswa kedua lebih tinggi dari siswa ketiga`)
+            alert (`tinggi badan siswa kedua urutan kedua`)
+        } else {
+            alert (`siswa ketiga lebih tinggi dari siswa pertama`)
+            alert (`tinggi badan siswa ketiga urutan pertama`)
+        }
+    } else if (siswa1>=siswa2 && siswa1>=siswa3){
+        alert (`siswa pertama lebih tinggi dari siapapun`)
+        if(siswa2>=siswa3) {
+            alert (`siswa kedua lebih tinggi siswa ketiga`)
+            alert (`tinggi badan siswa ketiga urutan kedua`) 
+        } else {
+            alert (`siswa ketiga lebih tinggi siswa kedua`)
+            alert (`tinggi badan siswa kedua urutan ketiga`) 
+        }
+    }
+
+    </script>
+</body>
+</html>
